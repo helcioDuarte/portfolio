@@ -1,9 +1,17 @@
 @import "tailwindcss";
+@source inline("blur-sm");
 @theme {
   --animate-loop-scroll: loop-scroll 10s linear infinite;
+  --animate-fade-in: fade-in 0.2s ease-out forwards;
+  --animate-fade-in-start: fade-in 0.5s ease-out forwards;
 
   @keyframes loop-scroll{
     0% {transform: translateX(0);}
     100% {transform: translateX(-100%);}
+  }
+
+  @keyframes fade-in{
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 }
