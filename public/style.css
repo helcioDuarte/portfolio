@@ -726,6 +726,14 @@
       }
     }
   }
+  .hover\:text-xl {
+    &:hover {
+      @media (hover: hover) {
+        font-size: var(--text-xl);
+        line-height: var(--tw-leading, var(--text-xl--line-height));
+      }
+    }
+  }
   .hover\:text-fuchsia-900 {
     &:hover {
       @media (hover: hover) {
