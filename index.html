@@ -6,20 +6,22 @@
   <link href="./public/style.css" rel="stylesheet">
   <script src="./public/js/main.js"></script>
 </head>
-<body class="bg-zinc-950 flex justify-center items-start min-h-screen p-10 animate-fade-in-start">
-  <div id="main" class="flex">
-  <aside class="sticky top-10 bg-zinc-900 w-65 h-[540px] flex-shrink-0 mr-8 rounded-3xl text-amber-50 text-center border-1 border-zinc-700">
-    <div class="p-10 space-y-4">
-      <img src="./public/assets/portfolio_picture.jpg" alt="" class="w-40 h-40 rounded-lg mx-auto object-cover place-self-center">
-      <h1 class="text-2xl text-shadow-lg/30">Helcio Duarte</h1>
-      <div class="bg-zinc-800 rounded-lg h-6 place-content-center border-1 border-zinc-700 inset-shadow-sm inset-shadow-zinc-900">
+<body class="bg-zinc-950 min-h-screen animate-fade-in-start">
+  <div id="main" class="w-full max-w-7xl mx-auto px-10 py-10 flex flex-col lg:flex-row">
+  <aside class="relative bg-zinc-900 max-w-4xl flex flex-col md:flex-row lg:flex-col p-5 mb-8 lg:sticky lg:top-10 lg:w-65 lg:h-[540px] lg:mb-0 lg:mr-8 rounded-3xl text-amber-50 text-center border-1 border-zinc-700">
+    <div class="flex flex-col w-full pb-5 items-center md:items-start lg:items-center justify-center space-y-4 lg:pt-5">
+      <div class="flex flex-row space-x-4 lg:flex-col md:space-x-5 md:space-y-4 md:ml-4 lg:ml-0">
+        <img src="./public/assets/portfolio_picture.jpg" alt="" class="w-22 h-22 rounded-lg md:w-28 md:h-28 lg:w-40 lg:h-40 lg:ml-5.5" >
+        <h1 class="text-2xl text-shadow-lg/30 lg:text-2xl place-self-center md:mb-4 lg:mb-0">Helcio <br class="lg:hidden"> Duarte</h1>
+      </div>
+      <div class="bg-zinc-800 rounded-lg border border-zinc-700 inset-shadow-sm inset-shadow-zinc-900 p-0.5 md:absolute md:top-5/6 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 lg:static lg:top-auto lg:left-auto lg:translate-x-0 lg:translate-y-0">
         <p class="text-sm text-shadow-lg/30">Desenvolvedor de Software</p>
       </div>
     </div>
     <!--SEGUNDA DIVISAO-->
-    <div class="space-y-4 px-6 py-4 border-t-1 border-zinc-700">
-      <div class="flex items-center space-x-4">
-        <span class="w-11 h-11 flex items-center justify-center rounded-xl bg-radial-[at_25%_25%] from-zinc-700 to-zinc-800 to-55% text-fuchsia-800 shadow-xl">
+    <div class="pt-4 md:space-y-3 lg:space-y-1 md:pt-0 lg:pt-4 border-t md:border-t-0 lg:border-t border-zinc-700 flex flex-col w-full">
+      <div class="flex flex-row md:flex-row-reverse lg:flex-row items-start md:items-end w-full space-x-4">
+        <span class="w-9.5 h-9.5 md:w-11 md:h-11 self-end md:self-auto shrink-0 flex items-center justify-center rounded-xl bg-radial-[at_25%_25%] from-zinc-700 to-zinc-800 to-55% text-fuchsia-800 shadow-xl">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" 
             d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5
@@ -28,24 +30,24 @@
             0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
           </svg>
         </span>
-        <div>
-          <p class="text-xs text-zinc-700 uppercase text-left">Email</p>
-          <p class="text-base text-amber-50 text-shadow-lg/30">hdd2004@gmail.com</p>
+        <div class="flex flex-col p-2 pl-0 pb-0">
+          <p class="text-xs text-zinc-600 uppercase text-left md:text-right lg:text-left">Email</p>
+          <p class="text-sm text-amber-50 text-shadow-lg/30 md:text-base">hdd2004@gmail.com</p>
         </div>
       </div>
-      <div class="flex items-center space-x-4">
-        <div class="w-11 h-11 flex items-center justify-center rounded-xl bg-radial-[at_25%_25%] from-zinc-700 to-zinc-800 to-55% text-fuchsia-800 shadow-xl">
+      <div class="flex flex-row md:flex-row-reverse lg:flex-row items-center space-x-4">
+        <div class="w-9.5 h-9.5 md:w-11 md:h-11 self-end md:self-auto shrink-0 flex items-center justify-center rounded-xl bg-radial-[at_25%_25%] from-zinc-700 to-zinc-800 to-55% text-fuchsia-800 shadow-xl">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
           </svg>
         </div>
-        <div>
-          <p class="text-xs text-zinc-600 uppercase text-left">Localização</p>
-          <p class="text-base text-amber-50 text-shadow-lg/30">Nova Iguaçu, RJ</p>
+        <div class="flex flex-col p-4 pl-0 pb-2">
+          <p class="text-xs text-zinc-600 uppercase text-left md:text-right lg:text-left">Localização</p>
+          <p class="text-sm text-amber-50 text-shadow-lg/30 md:text-base">Nova Iguaçu, RJ</p>
         </div>
       </div>
-      <div class="flex space-x-4 p-3 items-center justify-center">
+      <div class="space-x-4 p-3 items-center justify-center hidden lg:flex mt-6">
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/helcioDuarte">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="cursor-pointer w-5 h-5 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-fuchsia-900" viewBox="0 0 16 16" >
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
@@ -70,12 +72,12 @@
     </div>
   </aside>
 
-  <div class="flex flex-col space-y-8"> 
-    <div class="bg-zinc-900 flex-grow h-[540px] rounded-3xl max-w-4xl border-1 space-y-10 border-zinc-700 text-amber-50 py-10 px-10">
-      <div class="bg-zinc-800 w-55 flex justify-center place-self-center rounded-3xl border-1 border-zinc-600 inset-shadow-sm inset-shadow-zinc-900">
-        <h1 class="text-3xl justify-center flex text-center p-1 text-shadow-lg/30">Sobre</h1>
+  <div class="flex flex-col space-y-8 w-full"> 
+    <div class="bg-zinc-900 flex-grow lg:h-[540px] rounded-3xl max-w-4xl border-1 space-y-5 lg:space-y-10 border-zinc-700 text-amber-50 p-5 lg:p-10">
+      <div class="bg-zinc-800 w-30 md:w-40 lg:w-55 flex justify-center place-self-center rounded-3xl border-1 border-zinc-600 inset-shadow-sm inset-shadow-zinc-900">
+        <h1 class="text-xl md:text-2xl lg:text-3xl justify-center flex text-center p-1 text-shadow-lg/30">Sobre</h1>
       </div>
-      <p class="text-justify text-xl text-shadow-lg/30">
+      <p class="text-justify text-sm md:text-lg lg:text-xl text-shadow-lg/30">
         Sou um Cientista da computação com experiência em desenvolvimento back-end e front-end. Meu trabalho
         abrange diversas áreas — desde configuração de servidores do zero até a criação do HTML e CSS de sites
         dinâmicos para mobile e desktop. Já escrevi APIs de integração de banco de dados PostgreSQL e Spring Boot para a
@@ -85,7 +87,7 @@
         algoritmos.
       </p>
         <!--LOOP SCROLL-->
-      <div class="flex place-self-center rounded-3xl border-1 border-zinc-600 bg-zinc-800 w-90 overflow-hidden inset-shadow-sm inset-shadow-zinc-900 h-15 cursor-pointer">
+      <div class="flex place-self-center rounded-3xl border-1 border-zinc-600 bg-zinc-800 w-full lg:w-90 overflow-hidden inset-shadow-sm inset-shadow-zinc-900 h-15 cursor-pointer">
         <div class="flex gap-x-5 animate-loop-scroll px-2">
             <div class="flex items-center gap-x-px">
                 <div>
@@ -236,13 +238,13 @@
     </div>
     
     <div class="bg-zinc-900 flex-grow h-[540px] rounded-3xl max-w-4xl border-1 space-y-10 border-zinc-700 text-amber-50 py-10 px-10">
-      <div class="bg-zinc-800 w-55 flex justify-center place-self-center rounded-3xl border-1 border-zinc-600 inset-shadow-sm inset-shadow-zinc-900">
-        <h1 class="text-3xl justify-center flex text-center p-1 text-shadow-lg/30 animate-fade-in-start">Projetos</h1>
+      <div class="bg-zinc-800 w-30 md:w-40 lg:w-55 flex justify-center place-self-center rounded-3xl border-1 border-zinc-600 inset-shadow-sm inset-shadow-zinc-900">
+        <h1 class="text-xl md:text-2xl lg:text-3xl justify-center flex text-center p-1 text-shadow-lg/30">Projetos</h1>
       </div>
-      <div id="card" class=" cursor-pointer group space-y-1 h-30 w-65 relative transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:inset-shadow-fuchsia-900 bg-zinc-800 rounded-3xl border-1 border-zinc-600 inset-shadow-sm inset-shadow-zinc-900 px-3 py-2 overflow-hidden" >
-        <h1 class="text-2xl">Agendalab</h1>
+      <div id="card" class=" cursor-pointer group space-y-1 relative transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:inset-shadow-fuchsia-900 bg-zinc-800 rounded-3xl border-1 border-zinc-600 inset-shadow-sm inset-shadow-zinc-900 px-3 py-2 overflow-hidden" >
+        <h1 class="text-lg">Agendalab</h1>
         <p class="text-zinc-500 text-sm">03/2024 - 12/2024</p>
-        <p class="text-lg">Desenvolvedor Full-Stack</p>
+        <p class="">Desenvolvedor Full-Stack</p>
         <button data-modal-target="modal-agendalab" class=" flex items-center justify-center absolute inset-0 bg-transparent text-white font-bold py-2 px-4 rounded object-cover w-full h-full cursor-pointer"></button>
         <div id="plusBubble" 
             class="absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-zinc-900 text-fuchsia-400 text-2xl font-bold flex justify-center text-center shadow-[8px_0_15px_-4px_#a21caf] 
