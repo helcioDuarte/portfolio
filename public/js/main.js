@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const openButtons = document.querySelectorAll('[data-modal-target]');
   const mainContent = document.getElementById('main');
-  
+  const closeModal = document.getElementById('close-modal-btn')
+
   openButtons.forEach(button => {
     button.addEventListener('click', () => {
       const modalId = button.getAttribute('data-modal-target');
@@ -19,6 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
         modalContent.addEventListener('click', (event) => {
           event.stopPropagation(); 
         });
+        closeModal.addEventListener('click', () => {
+          modalOverlay.classList.add('hidden');
+          mainContent.classList.remove('blur-sm');
+        })
       }
     });
   });
